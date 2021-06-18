@@ -1,0 +1,471 @@
+/* Color Palette 2763 is being used for the design of the site */
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0%;
+  padding: 0%;
+  overflow-x: hidden;
+  font-family: sans-serif;
+}
+
+.container-fluid {
+  padding: 0px;
+}
+
+.line-height-1 {
+  line-height: 1;
+}
+
+/* USED FOR DEBUGGING, outlines all elements in red */
+/* * {
+  background: #000 !important;
+  color: #0f0 !important;
+  outline: solid #f00 1px !important;
+} */
+
+/* Design for small dotted hr's */
+.dotted-hr {
+  border: solid;
+  border: none;
+  border-bottom: 1px dotted white;
+  border-width: 0.5rem;
+  width: 7%;
+  background-color: transparent;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Default link design */
+.link {
+  color: #00adb5;
+  text-decoration: none;
+}
+
+.link:hover {
+  color: #eeeeee;
+}
+
+.element-to-stick-to-bottom {
+  margin: 0%;
+  padding: 0%;
+  position: absolute;
+  bottom: 0;
+}
+
+/* Heading text used for each section */
+.section-heading-text {
+  margin-top: 0%;
+  color: #393e46;
+  font-size: 2.2rem;
+}
+
+/* Title Screen Section */
+
+.title-screen {
+  background-color: #00adb5;
+}
+
+/* Elements inside title-screen */
+
+.my-name-in-title-screen {
+  font-size: 4rem;
+  color: #393e46;
+  font-family: "Delius", cursive;
+  display: block;
+  z-index: 50;
+  position: relative; /* done so the cloud decorations fall behind the text*/
+}
+
+.my-description-in-title-screen {
+  font-size: 2.6rem;
+  font-weight: 600;
+  color: #393e46;
+  font-style: italic;
+  font-family: "Delius", cursive;
+  display: block;
+  z-index: 50;
+  position: relative; /* done so the cloud decorations fall behind the text*/
+}
+
+.personal-picture-in-title-screen {
+  height: auto;
+  width: 32%;
+  border: #393e46;
+  border-style: solid;
+  border-radius: 80%;
+}
+
+.mountain-in-title-screen {
+  height: auto;
+  width: 32%;
+  padding-bottom: 0%;
+  display: block;
+}
+
+.top-cloud-in-title-screen {
+  position: absolute;
+  margin-bottom: 0%;
+  padding-bottom: 0%;
+  width: 10%;
+  right: 11%;
+  top: 6%;
+  z-index: 11;
+  transition: all 200ms ease-in-out;
+}
+
+.bottom-cloud-in-title-screen {
+  position: absolute;
+  margin-bottom: 0%;
+  padding-bottom: 0%;
+  width: 13%;
+  width: 12%;
+  bottom: 43%;
+  right: 74%;
+  z-index: 10;
+  transition: all 200ms ease-in-out;
+}
+
+/* Makes the top cloud move down so it doesn't block my name on large screens (bootstrap size for large) */
+@media (max-width: 1200px) {
+  .top-cloud-in-title-screen {
+    right: 11%;
+    top: 24%;
+  }
+}
+
+/* Makes the bottom cloud move down so it doesn't block my description on very small screens */
+@media (max-width: 475px) {
+  .bottom-cloud-in-title-screen {
+    bottom: 31%;
+    right: 74%;
+  }
+}
+
+/* Skills Screen Section */
+
+.skills-screen {
+  background-color: #222831;
+  color: #eeeeee;
+  margin: 0%;
+  padding-top: 2%;
+  text-align: center;
+}
+
+.skills-background-color-for-text {
+  color: #222831;
+}
+
+/* Elements inside Skills Screen */
+
+.cyan-text-color {
+  color: #0ecad4;
+}
+
+.skills-list {
+  line-height: 2.4;
+  font-size: 1.2rem;
+}
+
+.skills-list ul {
+  display: inline-block;
+}
+
+.skills-list-text {
+  color: #08d9e4;
+  font-size: 1.4rem;
+}
+
+.skills-list-item {
+  font-size: 1.1rem;
+}
+
+.libraries-list {
+  line-height: 2;
+  font-size: 1rem;
+  text-align: left;
+}
+
+.libraries-list-ul {
+  list-style: url();
+}
+
+/* Selectors for Libraries - Frameworks cards*/
+
+.skills-screen .card {
+  border-radius: 7%;
+  width: 70%;
+  height: auto;
+  padding: 1% 0 0 0;
+  margin: 0 auto 0 auto;
+  position: relative;
+  transition: all 100ms ease-in-out;
+}
+
+.skills-screen .card:hover {
+  bottom: 0.4%;
+  filter: drop-shadow(3px 1px 2px rgba(0, 255, 255, 0.26));
+}
+
+.skills-screen .card:hover .skills-card-image {
+  filter: drop-shadow(2px 2px 0.03px rgba(24, 25, 26, 0.116));
+}
+
+.skills-card-image {
+  filter: drop-shadow(0px 0px 0px rgba(24, 25, 26, 0.082));
+  transition: all 100ms ease-out;
+}
+
+.skills-card-text {
+  color: black;
+}
+
+.skills-card-title {
+  font-size: 1.5rem;
+}
+
+.skills-card-image-rotated {
+  transform: rotate(25deg);
+}
+
+.skills-screen .card .list-group-item:hover {
+  background-color: rgba(0, 255, 255, 0.12);
+}
+
+/* Projects Screen Section */
+
+.projects-screen {
+  background-color: #494d52;
+  color: black;
+  margin: 0%;
+}
+
+/* Elements in Projects Screen */
+
+.heading-text-in-projects-section {
+  color: rgb(255, 255, 255);
+}
+
+/* Projects Carousel */
+
+#carouselProjects {
+  height: fit-content;
+}
+
+.carousel-indicator {
+  position: relative;
+  bottom: -5%;
+}
+
+.carousel-item {
+  padding-bottom: 6%;
+}
+
+.carousel-image {
+  border-style: none;
+  width: fit-content;
+}
+
+.carousel-caption {
+  position: relative;
+  top: 16%;
+  height: max-content;
+  background-color: #343a40fa;
+  filter: drop-shadow(0px 0px 0px rgb(31, 36, 43));
+  transition: all 100ms ease-in-out;
+}
+
+.carousel-item-section-text {
+  text-align: left;
+  margin-left: 18%;
+}
+
+.carousel-item-p-text {
+  text-align: left;
+  margin-left: 25%;
+}
+
+.carousel-caption ul {
+  text-align: left;
+  margin-left: 20%;
+  line-height: 1.6;
+}
+
+.carousel-item-bullet {
+  list-style-position: inside;
+}
+
+/* Makes the carousel caption move up so it's visible on smaller screens*/
+@media (max-width: 1220px) {
+  .carousel-caption {
+    top: 4.5%;
+    filter: drop-shadow(0px 0px 0px rgba(31, 36, 43, 0.884));
+  }
+}
+
+/* Makes the left margins on the carousel caption smaller to better fit smaller screens*/
+@media (max-width: 520px) {
+  .carousel-item-section-text {
+    text-align: left;
+    margin-left: 6%;
+  }
+
+  .carousel-item-p-text {
+    text-align: left;
+    margin-left: 10%;
+  }
+
+  .carousel-caption ul {
+    text-align: left;
+    margin-left: 0%;
+    line-height: 1.6;
+  }
+}
+
+/* Makes the text on the carousel caption smaller to better fit smaller screens*/
+@media (max-width: 410px) {
+  .carousel-caption {
+    font-size: 0.8rem;
+  }
+
+  .carousel-caption h4 {
+    font-size: 1.2rem;
+  }
+
+  .carousel-caption h5 {
+    font-size: 1rem;
+  }
+}
+
+/* Contact Screen Section */
+
+.contact-screen {
+  background-color: #eeeeee;
+  color: #00adb5;
+  margin: 0%;
+  padding-top: 1%;
+  text-align: center;
+}
+
+/* Elements in Contact Screen */
+
+.contact-introductory-text {
+  margin-top: 0%;
+  color: #393e46;
+  font-size: 2.2rem;
+}
+
+.contact-information {
+  margin-top: 0%;
+  color: #393e46;
+  font-size: 1.3rem;
+}
+
+/* Social media buttons */
+
+.social-media-btn-links {
+  display: inline-block;
+  margin: 0 0.2rem 0 0.2rem;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+.social-media-btn-links:hover {
+  display: inline-block;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+.social-media-btn-email-me {
+  position: relative;
+  bottom: 0rem;
+  color: gray;
+  transition: all ease-in-out 200ms;
+}
+
+.social-media-btn-github {
+  position: relative;
+  bottom: 0rem;
+  color: gray;
+  transition: all ease-in-out 200ms;
+}
+
+.social-media-btn-linked-in {
+  position: relative;
+  bottom: 0rem;
+  color: gray;
+  transition: all ease-in-out 200ms;
+}
+
+/* Recolors and moves the social media buttons up when hovered*/
+.social-media-btn-email-me:hover {
+  bottom: 0.5rem;
+  color: rgb(173, 35, 35);
+}
+
+.social-media-btn-github:hover {
+  bottom: 0.5rem;
+  color: orange;
+}
+
+.social-media-btn-linked-in:hover {
+  bottom: 0.5rem;
+  color: #0077b5;
+}
+
+/* Credits Screen Section*/
+
+.credits-screen {
+  background-color: #222831;
+  color: #eeeeee;
+  margin: 0%;
+  padding-top: 0.5%;
+}
+
+.credits-text {
+  margin: 0%;
+  margin-top: 0%;
+  margin-bottom: 0%;
+  margin-left: 1%;
+  font-size: 0.8rem;
+}
+
+/* tool tip that appears under an item*/
+
+/* Tooltip container */
+.small-tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+/* Tooltip text */
+.small-tooltip .tooltiptext {
+  visibility: hidden;
+  font-size: 1rem;
+  width: 120px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+
+  /* Position the tooltip text */
+  position: absolute;
+  z-index: 1;
+  top: 125%;
+  left: 50%;
+  margin-left: -60px;
+
+  /* Fade in tooltip */
+  opacity: 0;
+  transition: opacity 100ms;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.small-tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}

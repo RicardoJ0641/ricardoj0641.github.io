@@ -1,75 +1,416 @@
 <!DOCTYPE html>
 <html lang="en">
 
-	<header class="header-background">
+<head>
 
-		<title> Portfolio </title>
+  <meta charset="utf-8" />
+  <meta name="description" content="Ricardo Ramirez Santiago's Personal Portfolio" />
+  <meta name="keywords"
+    content="Ricardo Ramirez Santiago Personal Portfolio, Ricardo Ramirez Santiago
+    Portfolio, Ricardo Ramirez Santiago Programmer, Ricardo Ramirez Santiago Developer, Ricardo Ramirez Santiago Software Developer" />
+  <meta name="author" content="Ricardo Ramirez Santiago" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ricardo's Portfolio</title>
 
-		<meta name="author" content="Ricardo J. Ramirez Santiago">
+  <!--CSS-->
+  <link rel="stylesheet" href="/css/styles.css" />
+
+  <!--Favicon-->
+  <link rel="icon" type=“image/x-icon” href="/resources/favicon-icon.ico" />
+
+  <!--External Fonts-->
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Delius&display=swap" rel="stylesheet" />
+
+  <!--External Icons-->
+  <script src="https://kit.fontawesome.com/95e693b1a9.js" crossorigin="anonymous"></script>
+
+  <!--Bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
+  </script>
+
+</head>
+
+<body>
+
+  <!--Title Screen-->
+  <section class="container-fluid px-0 title-screen">
+
+    <div class="row">
+
+      <!--My name-->
+      <div class="col-lg-12 text-center mb-4">
+        <h1 class="my-name-in-title-screen">Ricardo Ramirez Santiago</h1>
+      </div>
+
+      <!--My description-->
+      <div class="col-lg-12 text-center mb-5">
+        <h4 class="my-description-in-title-screen">Software Developer</h4>
+      </div>
+
+      <!--Picture of me-->
+      <div class="col-lg-12 py-0 px-0 mt-2 mb-5">
+        <img class="personal-picture-in-title-screen d-block mx-auto"
+          src="resources\pictures of me\circle-cropped personal picture.png"
+          alt="Ricardo Ramirez Santiago Profile Picture" />
+      </div>
+
+      <!--Decoration: Mountain-->
+      <div class="col-lg-12 mt-3 pb-0 px-0">
+        <img class="mountain-in-title-screen mx-auto mt-0 mb-0" src="/resources/freepik/mountain.png"
+          alt="Mountain Decorative Picture" />
+      </div>
+
+    </div>
+
+    <!-- Decoration: top cloud-->
+    <img class="top-cloud-in-title-screen" src="/resources/freepik/cloud.png" alt="Cloud Decorative Picture 2" />
+
+    <!-- Decoration: bottom cloud -->
+    <img class="bottom-cloud-in-title-screen" src="/resources/freepik/cloudy.png" alt="Cloud Decorative Picture" />
+
+  </section>
+
+  <!--Skills Screen-->
+  <section class="container-fluid px-0 skills-screen">
+
+    <!--Section Introductory Text-->
+    <h2 class="section-heading-text cyan-text-color mt-2 mb-5">My Skills</h2>
+
+    <div class="row mt-2">
+
+      <!--Programming Languages list-->
+      <div class="col-lg-6 col-md-6 mx-auto mb-5 skills-list text-center">
+        <h3 class="skills-list-text">Programming Languages</h3>
+        <ul class="m-0">
+          <li class="skills-list-item">Python</li>
+          <li class="skills-list-item">C#</li>
+          <li class="skills-list-item">Java</li>
+          <li class="skills-list-item">C++</li>
+          <li class="skills-list-item">SQL</li>
+          <li class="skills-list-item">HTML/CSS</li>
+          <li class="skills-list-item">JavaScript</li>
+        </ul>
+      </div>
+
+      <!--Tools and Skills list-->
+      <div class="col-lg-6 mx-auto mb-5 skills-list text-center">
+        <h3 class="skills-list-text">Tools / Skills</h3>
+        <ul class="m-0">
+          <li class="skills-list-item">Git</li>
+          <li class="skills-list-item">Scrum</li>
+          <li class="skills-list-item">Design Patterns</li>
+          <li class="skills-list-item">Software Engineering</li>
+          <li class="skills-list-item">Pycharm</li>
+          <li class="skills-list-item">IntelliJ Idea</li>
+          <li class="skills-list-item">Visual Studio</li>
+        </ul>
+      </div>
+
+      <div class="col-lg-12 mx-auto text-center mb-4 mt-2">
+        <hr class="dotted-hr">
+      </div>
+
+      <!--Libraries list-->
+      <h2 class="cyan-text-color mb-2">Libraries / Frameworks / Implementations</h2>
+
+      <!--Deck of library cards-->
+      <div class="card-deck skills-card-text row justify-content-center mt-4 mb-4">
+
+        <!--Python Card-->
+        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4">
+          <div class="card skills-background-color-for-text">
+            <div class="card-body">
+
+              <div class="card-title skills-card-title mb-2">
+                Python
+              </div>
+
+              <i class="fab fa-python fa-5x skills-card-image-rotated skills-card-image mb-1"></i>
+
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item skills-background-color-for-text">AsyncIO</li>
+                <li class="list-group-item skills-background-color-for-text">NumPy</li>
+                <li class="list-group-item skills-background-color-for-text">OPC-UA</li>
+                <li class="list-group-item skills-background-color-for-text">Sly</li>
+              </ul>
+
+            </div>
+          </div>
+        </div>
+
+        <!--C# Card-->
+        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4">
+          <div class="card skills-background-color-for-text">
+            <div class="card-body">
+
+              <div class="card-title skills-card-title mb-2">
+                C#
+              </div>
+
+              <i class="fab fa-cuttlefish fa-5x skills-card-image mb-1"></i>
+
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item skills-background-color-for-text">.NET Framework</li>
+              </ul>
+
+            </div>
+          </div>
+        </div>
+
+        <!--Web development Card-->
+        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4">
+          <div class="card skills-background-color-for-text">
+            <div class="card-body">
+
+              <div class="card-title skills-card-title mb-2">
+                Web
+              </div>
+
+              <i class="far fa-file-code fa-5x skills-card-image mb-1"></i>
+
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item skills-background-color-for-text">Bootstrap 5</li>
+              </ul>
+
+            </div>
+          </div>
+        </div>
+
+        <!--Database Card-->
+        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4">
+          <div class="card skills-background-color-for-text">
+            <div class="card-body">
+
+              <div class="card-title skills-card-title mb-2">
+                Database
+              </div>
+
+              <i class="fas fa-database fa-5x skills-card-image mb-1"></i>
+
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item skills-background-color-for-text">MySQL</li>
+                <li class="list-group-item skills-background-color-for-text">MariaDB</li>
+              </ul>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!--Projects Screen-->
+  <section class="container-fluid px-0 pt-4 projects-screen">
+
+    <h2 class="section-heading-text heading-text-in-projects-section mt-2 mb-3 text-center">Projects</h2>
+
+    <!--Projects Carousel-->
+    <div id="carouselProjects" class="carousel slide pt-2" data-interval="false" data-pause="hover">
+
+      <!--Carousel indicators-->
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselProjects" data-bs-slide-to="0" class="active" aria-current="true"
+          aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselProjects" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselProjects" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+
+      <div class="carousel-inner">
+
+        <!--Capstone project-->
+        <div class="carousel-item active">
+
+          <div class="row">
+
+            <!--Project images-->
+            <div class="col-xl-6 col-lg-6 px-1">
+              <img src="resources/project images/plasma meter/mainmenu.png" class="carousel-image w-100 mb-2"
+                alt="plasma meter main menu">
+            </div>
+            <div class="col-xl-6 col-lg-6 px-1">
+              <img src="resources/project images/plasma meter/results.png" class="carousel-image w-100 mb-2"
+                alt="plasma meter main menu">
+            </div>
+
+          </div>
+
+          <!--Project Caption-->
+          <div class="carousel-caption px-1 pt-3 pb-1">
+            <h4 class="carousel-item-heading-text">Plasma-Meter</h4>
+            <h5 class="carousel-item-section-text mt-1">Worked on:</h5>
+            <ul>
+              <li class="carousel-item-bullet">OPC-UA client and server</li>
+              <li class="carousel-item-bullet">Software architecture</li>
+              <li class="carousel-item-bullet">Data processing</li>
+              <li class="carousel-item-bullet">Hardware sensor reading</li>
+              <li class="carousel-item-bullet">Database insertion and viewing</li>
+            </ul>
+            <h5 class="carousel-item-section-text mt-1">Used:</h5>
+            <div class="line-height-1">
+              <p class="carousel-item-p-text">Python, MySQL, GitHub, RaspberryPi, Design Patterns</p>
+              <p class="carousel-item-p-text"> <span class="cyan-text-color">Python Libraries</span>: OPC-UA, NumPy,
+                AsyncIO, AsyncUA, MySQLConnector</p>
+            </div>
+          </div>
+        </div>
+
+        <!--Pill Identifier project-->
+        <div class="carousel-item">
+          <div class="row">
+
+            <!--Project images-->
+            <div class="col-xl-6 col-lg-6 px-1">
+              <img src="resources/project images/pill identifier/main menu.png" class="carousel-image w-100 mb-2"
+                alt="plasma meter main menu">
+            </div>
+            <div class="col-xl-6 col-lg-6 px-1">
+              <img src="resources/project images/pill identifier/pill report.png" class="carousel-image w-100 mb-2"
+                alt="plasma meter main menu">
+            </div>
+
+          </div>
+
+          <!--Project Caption-->
+          <div class="carousel-caption px-1 pt-3 pb-1">
+            <h4 class="carousel-item-heading-text">Pill Identifier</h4>
+            <h5 class="carousel-item-section-text mt-1">Worked on:</h5>
+            <ul>
+              <li class="carousel-item-bullet">Database insertion, viewing, modification, and removal</li>
+              <li class="carousel-item-bullet">Back-end logic</li>
+              <li class="carousel-item-bullet">Graphical User Interface</li>
+            </ul>
+            <h5 class="carousel-item-section-text mt-1">Used:</h5>
+            <div class="line-height-1">
+              <p class="carousel-item-p-text">C#, MySQL, GitHub</p>
+              <p class="carousel-item-p-text"> <span class="cyan-text-color">C# Libraries</span>: .NET Framework</p>
+            </div>
+          </div>
+        </div>
+
+        <!--LAO Interpreter project-->
+        <div class="carousel-item">
+          <div class="row">
+
+            <!--Project images-->
+            <div class="col-xl-6 col-lg-6 px-1">
+              <img src="resources/project images/LAO interpreter/line by line.png" class="carousel-image w-100 mb-2"
+                alt="plasma meter main menu">
+            </div>
+            <div class="col-xl-6 col-lg-6 px-1">
+              <img src="resources/project images/LAO interpreter/run file.png" class="carousel-image w-100 mb-2"
+                alt="plasma meter main menu">
+            </div>
+
+          </div>
+
+          <!--Project Caption-->
+          <div class="carousel-caption px-1 pt-3 pb-1">
+            <h4 class="carousel-item-heading-text">LAO Interpreter</h4>
+            <h5 class="carousel-item-section-text mt-1">Worked on:</h5>
+            <ul>
+              <li class="carousel-item-bullet">Interpreter Lexer component</li>
+              <li class="carousel-item-bullet">Interpreter Parser component</li>
+              <li class="carousel-item-bullet">Component that interprets text files in the LAO language</li>
+              <li class="carousel-item-bullet">Line-by-line LAO language interpreter</li>
+            </ul>
+            <h5 class="carousel-item-section-text mt-1">Used:</h5>
+            <div class="line-height-1">
+              <p class="carousel-item-p-text">Python, GitHub</p>
+              <p class="carousel-item-p-text"> <span class="cyan-text-color">Python Libraries</span>: Sly</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!--Carousel control buttons-->
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselProjects" data-bs-slide="prev"
+        data-interval="false">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselProjects" data-bs-slide="next"
+        data-interval="false">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+  </section>
+
+  <!--Contact Screen-->
+  <section class="container-fluid px-0 pt-4 contact-scren">
+
+    <div class="row">
+
+      <!--Basic Contact Information-->
+      <h2 class="col-12 text-center contact-introductory-text">Contact Me</h2>
+      <p class="d-inline-block col-12 text-center contact-information">Email: ricardoj0641@gmail.com</p>
+      <p class="d-inline-block col-12 text-center contact-information">Phone: +1 (787) 514-8883</p>
+
+      <!--Social Media Links-->
+      <div class="col-12 text-center mb-1">
+        <div class="d-inline-block me-lg-3">
+          <a class="social-media-btn-links small-tooltip" href="mailto:ricardoj0641@gmail.com" target="_blank">
+            <i class="fas fa-envelope-square fa-7x social-media-btn-email-me">
+              <span class="tooltiptext">Email Me</span>
+            </i>
+          </a>
+        </div>
+
+        <div class="d-inline-block ms-lg-3 me-lg-3">
+          <a class="social-media-btn-links small-tooltip" href="https://github.com/RicardoJ0641" target="_blank">
+            <i class="fab fa-github-square fa-7x social-media-btn-github">
+              <span class="tooltiptext">GitHub</span>
+            </i>
+          </a>
+        </div>
+
+        <div class="d-inline-block ms-lg-3">
+          <a class="social-media-btn-links small-tooltip" href="https://www.linkedin.com/in/ricardo-ramirez-santiago/"
+            target="_blank">
+            <i class="fab fa-linkedin fa-7x social-media-btn-linked-in">
+              <span class="tooltiptext">LinkedIn</span>
+            </i>
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
 
 
-		<!-- Adds the font Montserrat -->
-		<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+  <footer>
+    <!--Credits Section on bottom of page-->
+    <section class="container-fluid px-0 credits-screen">
 
-		<!-- Links the style-sheet -->
-		<link rel="stylesheet" type="text/css" href="index.css">
+      <h4 class="credits-text">Images used in the page:</h4>
 
+      <!--Freepik and flaticon credits-->
+      <div class="credits-text">
+        Icons made by
+        <a href="https://www.freepik.com" class="link" title="Freepik">Freepik</a>
+        from
+        <a href="https://www.flaticon.com/" class="link" title="Flaticon">www.flaticon.com</a>
+      </div>
 
+      <!--Font awesome credits-->
+      <div class="credits-text">
+        Icons from
+        <a href="https://fontawesome.com/" class="link" title="fontawesome">fontawesome</a>
+      </div>
 
-		<!-- UPPER TITLE SCREEN -->
-		<div class="title-information">
-			<ul>
-				<li> Ricardo J. Ramirez Santiago </li>
-				<li>Computer Science </li>
-				<!-- <li> Email: jricardo0641@gmail.com </li> -->
-			</ul>
+    </section>
+  </footer>
 
-		</div>
-
-
-		<div class="title-navbar"
-
-			<ul>
-				<a href="#Information-Education"> <li> Education </li> </a>
-			
-				<a href="#Information-Special Projects"> <li>  Special Projects </li> </a>
-
-				<a href="#Information-Personal Projects"> <li> Personal Projects </li> </a>
-
-				<a href="#Information-Skills"> <li> Skills </li> </a>
-			</ul>
-
-		</div>
-
-	</header>
-
-	<body class="content-background">
-	
-		<main>
-
-			<!-- MAIN INFORMATION CONTAINER -->
-			<div class="information-container-column">
-			
-
-				<!-- Contains information about me-->
-				<div class="information-container-column" id="Information-Me">
-
-				</div>
-
-
-				<!-- Contains information about my education-->
-				<div class="information-container-column" id="Information-Education">
-					<p> heee <br> <br> <br> <br> </p>
-				</div>		
-
-
-			</div>
-
-		</main>
-	
-	</body>
-
-	<footer>
-	</footer>
+</body>
 
 </html>
