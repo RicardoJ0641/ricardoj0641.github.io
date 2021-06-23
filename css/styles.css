@@ -71,10 +71,6 @@ body {
   padding-right: .25%;
 }
 
-.navbar-nav .nav-link:hover {
-  color: red;
-  }
-
 @media (max-width: 350px) {
   .navbar #name-in-navbar{
     display: none;
@@ -158,16 +154,36 @@ body {
 /* Makes the top cloud move down so it doesn't block my name on large screens (bootstrap size for large) */
 @media (max-width: 1200px) {
   .top-cloud-in-title-screen {
-    right: 11%;
-    top: 24%;
+    right: 5%;
+    top: 27%;
   }
 }
 
-/* Makes the bottom cloud move down so it doesn't block my description on very small screens */
-@media (max-width: 475px) {
+/* Makes the top and bottom clouds move down so they doesn't block my name and description on almost medium screens */
+@media (max-width: 880px) {
+
+  .top-cloud-in-title-screen {
+    right: 2%;
+    top: 35%;
+  }
+
   .bottom-cloud-in-title-screen {
-    bottom: 31%;
-    right: 74%;
+    bottom: 12%;
+    right: 79%;
+  }
+}
+
+/* Makes the top and bottom clouds move down so they doesn't block my name and description on extra small screens */
+@media (max-width: 350px) {
+
+  .top-cloud-in-title-screen {
+    right: 2%;
+    top: 37%;
+  }
+
+  .bottom-cloud-in-title-screen {
+    bottom: 2%;
+    right: 79%;
   }
 }
 
