@@ -56,6 +56,31 @@ body {
   bottom: 0;
 }
 
+/* Navbar */
+
+.navbar .nav-item {
+  width: fit-content;
+}
+
+.navbar .nav-item:hover {
+  background-color: rgba(0, 255, 255, 0.12);
+}
+
+.navbar .nav-link {
+  padding-left: .25%;
+  padding-right: .25%;
+}
+
+.navbar-nav .nav-link:hover {
+  color: red;
+  }
+
+@media (max-width: 350px) {
+  .navbar #name-in-navbar{
+    display: none;
+  }
+}
+
 /* Heading text used for each section */
 .section-heading-text {
   margin-top: 0%;
@@ -67,6 +92,7 @@ body {
 
 .title-screen {
   background-color: #00adb5;
+  margin-top: 45px;
 }
 
 /* Elements inside title-screen */
@@ -111,8 +137,8 @@ body {
   margin-bottom: 0%;
   padding-bottom: 0%;
   width: 10%;
-  right: 11%;
-  top: 6%;
+  right: 8%;
+  top: 11%;
   z-index: 11;
   transition: all 200ms ease-in-out;
 }
@@ -123,8 +149,8 @@ body {
   padding-bottom: 0%;
   width: 13%;
   width: 12%;
-  bottom: 43%;
-  right: 74%;
+  bottom: 40%;
+  right: 79%;
   z-index: 10;
   transition: all 200ms ease-in-out;
 }
@@ -153,6 +179,7 @@ body {
   margin: 0%;
   padding-top: 2%;
   text-align: center;
+  padding-top: 45px;
 }
 
 .skills-background-color-for-text {
@@ -241,6 +268,7 @@ body {
   background-color: #494d52;
   color: black;
   margin: 0%;
+  padding-top: 45px;
 }
 
 /* Elements in Projects Screen */

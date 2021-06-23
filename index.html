@@ -36,14 +36,45 @@
 
 <body>
 
+  <!--Navbar-->
+  <nav class="navbar fixed-top navbar-expand-md navbar-dark bg-dark">
+    <div class="container-fluid">
+
+      <a id="name-in-navbar" class="navbar-brand" href="#">Ricardo Ramirez Santiago</a>
+      
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-items" aria-controls="navbar items" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <!--Navbar items-->
+      <div class="collapse navbar-collapse" id="navbar-items">
+        <ul class="navbar-nav row ms-auto mb-2 mb-lg-0">
+
+          <li class="nav-item col-4">
+            <a class="nav-link" href="#skills-section">Skills</a>
+          </li>
+
+          <li class="nav-item col-4">
+            <a class="nav-link" href="#projects-section">Projects</a>
+          </li>
+          
+          <li class="nav-item col-4">
+            <a class="nav-link" href="#contact-section">Contact Me</a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+
   <!--Title Screen-->
-  <section class="container-fluid px-0 title-screen">
+  <section id="title-section" class="container-fluid px-0 title-screen">
 
     <div class="row">
 
       <!--My name-->
       <div class="col-lg-12 text-center mb-4">
-        <h1 class="my-name-in-title-screen">Ricardo Ramirez Santiago</h1>
+        <h1 class="my-name-in-title-screen pt-3">Ricardo Ramirez Santiago</h1>
       </div>
 
       <!--My description-->
@@ -75,10 +106,10 @@
   </section>
 
   <!--Skills Screen-->
-  <section class="container-fluid px-0 skills-screen">
+  <section id="skills-section" class="container-fluid px-0 skills-screen">
 
     <!--Section Introductory Text-->
-    <h2 class="section-heading-text cyan-text-color mt-2 mb-5">My Skills</h2>
+    <h2 class="section-heading-text cyan-text-color mt-1 mb-5">My Skills</h2>
 
     <div class="row mt-2">
 
@@ -209,9 +240,9 @@
   </section>
 
   <!--Projects Screen-->
-  <section class="container-fluid px-0 pt-4 projects-screen">
+  <section id="projects-section" class="container-fluid px-0 projects-screen">
 
-    <h2 class="section-heading-text heading-text-in-projects-section mt-2 mb-3 text-center">Projects</h2>
+    <h2 class="section-heading-text heading-text-in-projects-section mt-1 mb-3 text-center">Projects</h2>
 
     <!--Projects Carousel-->
     <div id="carouselProjects" class="carousel slide pt-2" data-bs-interval="false" data-pause="hover">
@@ -346,7 +377,7 @@
   </section>
 
   <!--Contact Screen-->
-  <section class="container-fluid px-0 pt-4 contact-scren">
+  <section id="contact-section" class="container-fluid px-0 pt-4 contact-scren">
 
     <div class="row">
 
