@@ -86,7 +86,7 @@ body {
 
 /* Title Screen Section */
 
-.title-screen {
+#title-section {
   margin-top: 45px;
   /* background: rgb(14,39,120);
 background: radial-gradient(circle, rgba(14,39,120,1) 0%, rgba(27,21,124,1) 16%, rgba(28,38,65,1) 65%, rgba(42,41,54,1) 100%); */
@@ -126,75 +126,9 @@ background: linear-gradient(225deg, rgba(23,56,74,1) 0%, rgba(29,44,52,1) 100%, 
   border-radius: 80%;
 }
 
-.mountain-in-title-screen {
-  height: auto;
-  width: 32%;
-  padding-bottom: 0%;
-  display: block;
-}
-
-.top-cloud-in-title-screen {
-  position: absolute;
-  margin-bottom: 0%;
-  padding-bottom: 0%;
-  width: 10%;
-  right: 8%;
-  top: 11%;
-  z-index: 11;
-  transition: all 200ms ease-in-out;
-}
-
-.bottom-cloud-in-title-screen {
-  position: absolute;
-  margin-bottom: 0%;
-  padding-bottom: 0%;
-  width: 13%;
-  width: 12%;
-  bottom: 40%;
-  right: 79%;
-  z-index: 10;
-  transition: all 200ms ease-in-out;
-}
-
-/* Makes the top cloud move down so it doesn't block my name on large screens (bootstrap size for large) */
-@media (max-width: 1200px) {
-  .top-cloud-in-title-screen {
-    right: 5%;
-    top: 27%;
-  }
-}
-
-/* Makes the top and bottom clouds move down so they doesn't block my name and description on almost medium screens */
-@media (max-width: 880px) {
-
-  .top-cloud-in-title-screen {
-    right: 2%;
-    top: 35%;
-  }
-
-  .bottom-cloud-in-title-screen {
-    bottom: 12%;
-    right: 79%;
-  }
-}
-
-/* Makes the top and bottom clouds move down so they doesn't block my name and description on extra small screens */
-@media (max-width: 350px) {
-
-  .top-cloud-in-title-screen {
-    right: 2%;
-    top: 37%;
-  }
-
-  .bottom-cloud-in-title-screen {
-    bottom: 2%;
-    right: 79%;
-  }
-}
-
 /* Skills Screen Section */
 
-.skills-screen {
+#skills-section {
   background-color: #222831;
   color: #eeeeee;
   margin: 0%;
@@ -243,7 +177,7 @@ background: linear-gradient(225deg, rgba(23,56,74,1) 0%, rgba(29,44,52,1) 100%, 
 
 /* Selectors for Libraries - Frameworks cards*/
 
-.skills-screen .card {
+#skills-section .card {
   border-radius: 7%;
   width: 70%;
   height: auto;
@@ -253,12 +187,12 @@ background: linear-gradient(225deg, rgba(23,56,74,1) 0%, rgba(29,44,52,1) 100%, 
   transition: all 100ms ease-in-out;
 }
 
-.skills-screen .card:hover {
+#skills-section .card:hover {
   bottom: 0.4%;
   filter: drop-shadow(2px 1px 3px rgba(0, 255, 255, 0.26));
 }
 
-.skills-screen .card:hover .skills-card-image {
+#skills-section .card:hover .skills-card-image {
   filter: drop-shadow(2px 2px 0.03px rgba(24, 25, 26, 0.116));
 }
 
@@ -279,13 +213,13 @@ background: linear-gradient(225deg, rgba(23,56,74,1) 0%, rgba(29,44,52,1) 100%, 
   transform: rotate(25deg);
 }
 
-.skills-screen .card .list-group-item:hover {
+#skills-section .card .list-group-item:hover {
   background-color: rgba(0, 255, 255, 0.12);
 }
 
 /* Projects Screen Section */
 
-.projects-screen {
+#projects-section {
   background-color: #494d52;
   color: black;
   margin: 0%;
@@ -365,7 +299,7 @@ background: linear-gradient(225deg, rgba(23,56,74,1) 0%, rgba(29,44,52,1) 100%, 
   }
 
   .carousel-image {
-    height: 45vh;
+    height: 45vh; 
   }
 }
 
@@ -406,7 +340,7 @@ background: linear-gradient(225deg, rgba(23,56,74,1) 0%, rgba(29,44,52,1) 100%, 
 
 /* Contact Screen Section */
 
-.contact-screen {
+#contact-section {
   background-color: #eeeeee;
   color: #00adb5;
   margin: 0%;
@@ -482,7 +416,7 @@ background: linear-gradient(225deg, rgba(23,56,74,1) 0%, rgba(29,44,52,1) 100%, 
 
 /* Credits Screen Section*/
 
-.credits-screen {
+#credits-section {
   background-color: #222831;
   color: #eeeeee;
   margin: 0%;
